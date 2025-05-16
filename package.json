@@ -1,10 +1,10 @@
 {
-  "name": "git-rollback",
-  "displayName": "Git Rollback",
-  "description": "Quickly rollback file changes",
-  "version": "0.0.1",
+  "name": "git-rollback-file",
+  "displayName": "Git Rollback File",
+  "description": "Quickly rollback file changes.",
+  "version": "0.0.2",
   "engines": {
-    "vscode": "^1.100.0"
+    "vscode": "^1.96.0"
   },
   "categories": [
     "Other"
@@ -14,8 +14,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "git-rollback.helloWorld",
-        "title": "Hello World"
+        "command": "git-rollback-file.rollbackFile",
+        "title": "Rollback File"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "git-rollback-file.rollbackFile",
+        "key": "cmd+r cmd+r",
+        "mac": "cmd+r cmd+r"
       }
     ]
   },
@@ -28,7 +35,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.100.0",
+    "@types/vscode": "^1.96.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
@@ -37,5 +44,20 @@
     "typescript": "^5.8.3",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.5.2"
+  },
+  "publisher": "armantang",
+  "author": "Arman Tang <td19941113@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/Arman19941113/vscode-git-rollback#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arman19941113/vscode-git-rollback"
+  },
+  "bugs": {
+    "url": "https://github.com/Arman19941113/vscode-git-rollback/issues"
+  },
+  "volta": {
+    "node": "22.14.0",
+    "pnpm": "10.10.0"
   }
 }
