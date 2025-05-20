@@ -2,7 +2,8 @@
   "name": "git-rollback-file",
   "displayName": "Git Rollback File",
   "description": "Quickly rollback file changes.",
-  "version": "0.0.2",
+  "version": "0.0.4",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -32,18 +33,20 @@
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "package": "vsce package"
   },
   "devDependencies": {
-    "@types/vscode": "^1.96.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
-    "eslint": "^9.25.1",
-    "typescript": "^5.8.3",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.5.2"
+    "@vscode/test-electron": "^2.5.2",
+    "@vscode/vsce": "^3.4.0",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3"
   },
   "publisher": "armantang",
   "author": "Arman Tang <td19941113@gmail.com>",
